@@ -1,0 +1,68 @@
+* {
+  font-style: unset;
+  font-variant: none;
+  font-weight: unset;
+  font-size: unset;
+  line-height: unset;
+  font-family: unset;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #878787;
+}
+
+a:hover {
+  background-color: whitesmoke;
+}
+
+.forms {
+  padding-top: 160px;
+}
+
+.forms, form, .tabs {
+  display: grid;
+  max-width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.tabs {
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.tab {
+  text-align: center;
+  border: 1px solid;
+  padding: 8px 0 0;
+}
+
+.tab:last-of-type {
+  border-left: 0;
+}
+
+input, button, .tab {
+  min-height: 40px;
+  line-height: 30px;
+}
+
+input, button {
+  margin-top: 10px;
+}
+
+input {
+  padding-left: 10px;
+}
+
+button {
+  background-color: whitesmoke;
+  border: 0;
+  border: 1px solid #999;
+  color: #676767;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: aliceblue 1px 2px 3px;
+}

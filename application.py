@@ -34,9 +34,7 @@ def index():
 
         if submit is not None:
             return render_template("index.html", register=False, post=True, submit=submit)
-        else:
-            register = request.args.get('sign') == 'up'
-            return render_template("index.html", register=register, post=False)
+
     else:
         register = request.args.get('sign') == 'up'
         return render_template("index.html", register=register, post=False)
